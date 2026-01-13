@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:skillshiksya3/login_ui.dart';
+import 'package:skillshiksya3/weather/splash_screen.dart';
+import 'package:skillshiksya3/weather/weather_ui.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,7 +14,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
-      home: const LoginUiPage(),
+      home: const SplashScreen(),
     );
   }
 }

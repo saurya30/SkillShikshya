@@ -1,9 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class ProfileApp extends StatelessWidget {
+class ProfileApp extends StatefulWidget {
   const ProfileApp({super.key});
 
+  @override
+  State<ProfileApp> createState() => _ProfileAppState();
+}
+
+class _ProfileAppState extends State<ProfileApp> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -15,10 +20,10 @@ class ProfileApp extends StatelessWidget {
             children: [
               const CircleAvatar(
                 radius: 104.0,
-                backgroundColor:  Color(0xFFAADA30),
+                backgroundColor: Color(0xFFAADA30),
                 child: CircleAvatar(
                   radius: 100.0,
-                  backgroundImage:  AssetImage(
+                  backgroundImage: AssetImage(
                     'assets/images/profile_image.jpg',
                   ),
                 ),
